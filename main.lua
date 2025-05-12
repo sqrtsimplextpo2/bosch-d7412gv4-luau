@@ -26,7 +26,7 @@ while true do
 			if dev.Alarm.Value == true then
 				print("In Alarm:")
 			end
-			print(dev.Name.."\n" and dev.Alarm.Value == true or dev.Name)
+			print(dev.Alarm.Value == true and dev.Name.."\n" or dev.Name)
 		end
 	end
 	task.wait(1)
